@@ -3,11 +3,13 @@
   "id": "keepexperience",
   "version": "${version}",
   "name": "KeepExperience",
-  "description": "",
-  "authors": [],
+  "description": "A fabric mod that saves the experience before death and gives it to the player again when they die",
+  "icon": "assets/ProjIcon.png",
+  "authors": [
+    "FreeGamerDev"
+  ],
   "contact": {},
   "license": "All-Rights-Reserved",
-  "icon": "assets/keepexperience/icon.png",
   "environment": "server",
   "entrypoints": {
     "main": [
@@ -15,11 +17,7 @@
     ]
   },
   "mixins": [
-    "keepexperience.mixins.json",
-    {
-      "config": "keepexperience.client.mixins.json",
-      "environment": "client"
-    }
+    "keepexperience.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
