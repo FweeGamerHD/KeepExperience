@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "keepexperience",
+  "version": "${version}",
+  "name": "KeepExperience",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/keepexperience/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "freegamerdev.keepexperience.Keepexperience"
+    ]
+  },
+  "mixins": [
+    "keepexperience.mixins.json",
+    {
+      "config": "keepexperience.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
